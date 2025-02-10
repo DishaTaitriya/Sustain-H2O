@@ -1,0 +1,371 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic Body Style */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+  
+.logo{
+    margin-right: 45%;
+    margin-top: 0%;
+    width: 5%;
+    height: 5%;
+    border-radius: 40px;
+}
+.navbar{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 40px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+nav a:hover{
+    background-color: #17da4b;
+    text-decoration: none;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+
+.background{
+  background: rgba(58, 220, 232, 0.7) url('img/background.jpg');
+  background-size: cover;
+  background-blend-mode: darken;
+}
+.box-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 50%;
+  margin: auto;
+  height: 75%;
+}
+.firstSection{
+  height: 70vh;
+}
+.firstHalf{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-big{
+padding-top: 20px;
+font-size:50px;
+color: #f4f4f4;
+font-size: 3em;
+font-weight: bold;
+line-height: 0.89em;
+
+}
+.text-small{
+  font-size: 18px;
+}
+.btn{
+  padding: 8px 20px;
+  margin: 7px 3px;
+  border: 2px solid white;
+  border-radius:  8px;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-family:"Ubuntu", sans-serif; 
+  font-size: 20px;
+}
+#resources{
+  padding-top: 70px;
+}
+.resources-section{
+  padding: 25px;
+}
+.resources-section h2{
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: black;
+} 
+.resources-section p{
+  font-size: 20px;
+  text-align: center;
+  justify-content: space-between;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+}
+  /* Techniques Section */
+  #techniques{
+    padding-top: 70px;
+  }
+  .techniques-section {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .techniques-section h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .techniques-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .technique {
+    background: rgba(219, 95, 244, 0.7) url('img/Agricultural\ Water\ Saving.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 30px;
+    margin: 10px;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .green{
+    background: rgba(50, 114, 243, 0.7) url('img/Urban\ Water\ Management..jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 30px;
+    margin: 10px;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .orange{
+    background: rgba(174, 243, 248, 0.7) url('img/Industrial\ Water\ Recycling.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 30px;
+    margin: 10px;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* banner */
+  #banner{
+   
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("./img/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    width:100%;
+    height:250px;
+}
+#banner h4{
+    color: #D8D8D8;
+}
+#banner h1{
+    color: #fff;
+}
+#banner button{
+    background-color: #fb774b;
+}
+
+  .technique h3 {
+    margin-bottom: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  
+  .technique p {
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .technique a {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 0 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    transform: translateX(-50%);
+  }
+  
+  .technique a:hover {
+    text-decoration: none;
+    background-color: #d8e8dd;
+  }
+  table {
+    border: 3px double rgb(5, 4, 4);
+    background-color: #fff;
+    width: 100%;
+    margin-top: 20px;
+  }
+  thead {
+    background-color: #f3f3f3;
+  }
+  
+  th,
+  td {
+    border: 2px double rgb(5, 4, 4);
+    padding: 5px;
+    text-align: left;
+  }
+  /* Footer */
+  footer {
+    background-color: #3c8dbc;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  footer p{
+    font-size: large;
+    font-weight: bold;
+  }
+
+  @media (max-width: 900px) {
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    
+    .sidebar{
+        width: 100%;
+    }
+  
+}
+@media (max-width: 768px) {
+  .sidebar {
+    display: none; /* Hide sidebar on mobile */
+   }  
+
+  .menu-button {
+    display:block;
+  }
+
+
+  .hideOnMobile {
+    display: none;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+  }
+  .techniques-list {
+    flex-direction: column;
+  }
+
+  .technique {
+    flex: 1 1 100%;
+  }
+  table {
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+  .firstSection .box-main {
+    padding: 20px;
+  }
+
+  .text-big {
+    font-size: 24px;
+  }
+  footer p {
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width: 1155px){
+  .box-main{
+    flex-direction: column-reverse;
+    max-width: 100%;
+  }
+  .text-small{
+    text-align: center;
+  }
+  .text-big{
+    margin-top: 30px;
+    text-align: center;
+  }
+  .menu-button {
+    display:block;
+  }
+
+  .hideOnMobile {
+    display: none;
+  }
+
+}
+
